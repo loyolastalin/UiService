@@ -1,0 +1,1 @@
+﻿INCOME_API_URL = 'http://localhost:64997/IncomeQuestionnaire'

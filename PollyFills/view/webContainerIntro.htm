@@ -1,0 +1,32 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>WebComponent Testing Cross Browser</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--<script src="../script/income-control.js"></script>-->
+    <script src="../script/node_modules/@webcomponents/webcomponentsjs/custom-elements-es5-adapter.js"></script>
+    <script src="../script/node_modules/@webcomponents/webcomponentsjs/webcomponents-loader.js" defer></script>
+    <script type="module">
+        function loadScript(src) {
+            return new Promise(function (resolve, reject) {
+                const script = document.createElement('script');
+                script.src = src;
+                script.onload = resolve;
+                script.onerror = reject;
+                document.head.appendChild(script);
+            });
+        }
+
+        WebComponents.waitFor(() => {
+            return loadScript('../script/income-control.js');
+        });
+    </script>
+
+    <TITLE></TITLE>
+</head>
+<BODY>
+    <income-component></income-component>
+
+</BODY>
+</html>

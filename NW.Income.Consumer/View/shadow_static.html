@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script src="../script/jquery-3.4.1.js"></script>
+    <link href="../css/menu.css" rel="stylesheet" />
+    <script>
+        $(document).ready(function () {
+            $("#button").click(function () {
+                showShadow();
+            });
+        });
+        function showShadow() {
+            const shadowRoot = document.getElementById('example').attachShadow({ mode: 'open' });
+            shadowRoot.innerHTML = `<style>
+button {
+      background: tomato;
+      color: white;
+}
+</style>
+<p>Place holder for the Income View</p>
+    <ul>
+        <li>First Question<ol><li>1</li><li>2</li></ol></li>
+        <li>Second Question</li>
+        <li>Thrid Question</li>
+    </ul>
+       `
+}
+    </script>
+</head>
+
+<body>
+    <div class="vertical-body">
+        <div id="example">This will use the CSS background</div>
+        <button id="button">Show Income</button>
+    </div>
+   
+</body>
+</html>

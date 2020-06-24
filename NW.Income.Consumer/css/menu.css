@@ -1,0 +1,30 @@
+﻿.vertical-menu {
+    width: 200px;
+}
+
+.vertical-menu {
+    width: 600px;
+}
+
+    .vertical-menu a {
+        background-color: #eee;
+        color: black;
+        display: block;
+        padding: 12px;
+        text-decoration: none;
+    }
+
+        .vertical-menu a:hover {
+            background-color: #ccc;
+        }
+
+        .vertical-menu a.active {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+.active {
+    background-color: #4CAF50;
+    color: white;
+    padding: 4px
+}
