@@ -10,7 +10,7 @@ using NW.Income.API.DAL;
 namespace NW.Income.API.BL
 {
     /// <summary>
-    /// Repobonsible for add the IncomeQuestionnaire object business object, inherited from <see cref="IIncomeBL"/>
+    /// Repobonsible  for add the IncomeQuestionnaire object business object, inherited from <see cref="IIncomeBL"/>
     /// </summary>
     internal class IncomeBL : IIncomeBL
     {
